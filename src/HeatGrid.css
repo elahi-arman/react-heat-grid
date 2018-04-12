@@ -1,0 +1,37 @@
+.HeatGrid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.HeatGrid.tall{
+    height: 20vh;
+    width: 20vh;
+}
+
+.HeatGrid.wide{
+    height: 20vw;
+    width: 20vw;
+}
+
+.HeatGrid > .square {
+  background: #aaa;
+  margin: 1%;
+}
+
+.HeatGrid > .tooltip.__react_component_tooltip {
+  font-size: 0.75em;
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.HeatGrid > .tooltip.__react_component_tooltip:hover {
+  visibility: visible ;
+  opacity: 1;
+}
+
+.HeatGrid > .tooltip.__react_component_tooltip:after {
+  border-right-color:  rgba(0, 0, 0, 0.8) !important;
+  border-right-style: solid !important;
+  border-right-width: 6px !important;
+}
